@@ -1,9 +1,20 @@
 # app_6
 
-New project workspace. Add your application here.
+Next.js 14 (App Router) + TypeScript + Tailwind design foundation: Manrope, FundSteward-style color tokens, Material Symbols, utility classes (`editorial-shadow`, `gold-gradient`, etc.).
+
+## Setup
 
 ```bash
-cd C:\Users\JaiTech\Projects\app_6
+npm install
+npm run dev
 ```
 
-Git default branch: `main`.
+Open [http://localhost:3000](http://localhost:3000).
+
+## Stack
+
+- `tailwind.config.ts` — extended colors and `fontFamily.sans` → `var(--font-manrope)`
+- `app/globals.css` — Material Symbols import + utility classes
+- `app/layout.tsx` — `html` uses Manrope CSS variable; `body` is `min-h-screen font-sans antialiased`
+
+Remote: `origin` → GitHub (see `git remote -v`).
