@@ -1,6 +1,10 @@
+import MarketingNav from "@/components/marketing/MarketingNav";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background px-6 py-16 text-on-surface">
+    <>
+      <MarketingNav />
+      <main className="min-h-screen bg-background px-6 py-16 text-on-surface">
       <div className="editorial-shadow mx-auto max-w-xl rounded-xl border border-outline bg-surface p-8">
         <div className="mb-4 flex items-center gap-2 text-secondary">
           <span className="material-symbols-outlined text-2xl">palette</span>
@@ -20,6 +24,20 @@ export default function HomePage() {
           Sample accent
         </div>
       </div>
+
+      <section id="problem" className="mx-auto mt-16 max-w-xl scroll-mt-24 text-on-surface-variant">
+        <h2 className="text-lg font-bold text-primary">#problem</h2>
+        <p className="mt-2 text-sm">Anchor target for the marketing nav.</p>
+      </section>
+      <section id="how-it-works" className="mx-auto mt-8 max-w-xl scroll-mt-24 text-on-surface-variant">
+        <h2 className="text-lg font-bold text-primary">#how-it-works</h2>
+        <p className="mt-2 text-sm">Anchor target for the marketing nav.</p>
+      </section>
+      <section id="contact" className="mx-auto mt-8 max-w-xl scroll-mt-24 text-on-surface-variant">
+        <h2 className="text-lg font-bold text-primary">#contact</h2>
+        <p className="mt-2 text-sm">Anchor target for the marketing nav.</p>
+      </section>
     </main>
+    </>
   );
 }
