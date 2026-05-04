@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import FundStewardLogo from "@/components/marketing/FundStewardLogo";
+
 const navAnchorClass =
   "text-xs font-semibold uppercase tracking-widest text-white/70 transition-colors hover:text-white";
 
@@ -8,16 +10,7 @@ export default function MarketingNav() {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-primary/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-4 gap-y-3 px-4 py-4">
         <Link href="/" className="flex shrink-0 items-center gap-2.5 text-white">
-          <svg
-            aria-hidden
-            className="h-7 w-7 shrink-0 text-secondary"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="4" y="6" width="24" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
-            <path d="M8 14h16M8 20h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          </svg>
+          <FundStewardLogo />
           <span className="text-base font-semibold tracking-tight">FundSteward</span>
         </Link>
 
